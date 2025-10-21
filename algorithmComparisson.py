@@ -31,7 +31,7 @@ scalers = {
     'zscore': StandardScaler()
 }
 
-# Hyperparameter grids (Naive Bayes removed)
+# Hyperparameter grids
 param_sets = {
     'SVM': itertools.product([0.1, 1.0, 10.0], ['linear', 'rbf', 'poly'], [2, 3, 4]),
     'Random Forest': itertools.product([50, 100, 200], [None, 5, 10], [2, 5, 10]),
